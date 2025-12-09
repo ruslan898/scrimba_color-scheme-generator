@@ -7,6 +7,47 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="app">
+    <div class="app-menu">
+      <input type="color" name="color" value="#F55A5A" id="color-input" class="color-input">
+      <div class="select-wrapper">
+        <select name="mode-select" id="mode-select" class="mode-select">
+          <option value="monochrome" selected>Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+
+      </div>
+      <button id="get-scheme-btn" class="get-scheme-btn">Get color scheme</button>
+    </div>
+    <div class="color-scheme">
+      <div class="color">
+        <div class="color-bg"></div>
+        <p class="color-code">#F55A5A</p>
+      </div>
+      <div class="color">
+        <div class="color-bg"></div>
+        <p class="color-code">#F55A5A</p>
+      </div>
+      <div class="color">
+        <div class="color-bg"></div>
+        <p class="color-code">#F55A5A</p>
+      </div>
+      <div class="color">
+        <div class="color-bg"></div>
+        <p class="color-code">#F55A5A</p>
+      </div>
+      <div class="color">
+        <div class="color-bg"></div>
+        <p class="color-code">#F55A5A</p>
+      </div>
+    </div>
+  </div>
 
 
   <script src="index.js"></script>
