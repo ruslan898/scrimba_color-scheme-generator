@@ -31,3 +31,22 @@ function renderColors(colorArr) {
 }
 
 window.addEventListener('load', getColorData());
+
+// ============== Copy color values to clipboard =====================
+
+async function copyToClipboard(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    console.log('Text copied to clipboard successfully!');
+  } catch (err) {
+    console.error('Failed to copy text: ', err);
+  }
+}
+
+document.querySelector('.color-scheme').addEventListener('click', (e) => {
+  if (e.target.classList.contains('color-code')) {
+    copyToClipboard(e.target.textContent);
+  } else if (e.target.classList.contains('color-bg')) {
+    copyToClipboard(e.target.nextElementSibling.textContent);
+  }
+});

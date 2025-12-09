@@ -98,6 +98,7 @@ body {
 .color-bg {
   height: calc(100% - 4.6rem);
   background-color: red;
+  cursor: pointer;
 }
 
 .color-code {
@@ -109,4 +110,5 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 2.4rem;
+  cursor: pointer;
 }
